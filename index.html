@@ -13,128 +13,17 @@
       crossorigin="anonymous"
     ></script>
     <title>Buy beauty products at Loveli</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Roboto", sans-serif;
-      }
-      #logo {
-        /* margin-top: 35px; */
-        width: 200px;
-        height: 52px;
-      }
-      .head-nav {
-        display: flex;
-        height: 80px;
-        background-color: black;
-        color: white;
-        align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        justify-content: space-between;
-      }
-      #logoBar {
-        display: flex;
-      }
-      #cart-wishlist {
-        text-align: right;
-      }
-      #search {
-        width: 400px;
-        height: 40px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        margin-right: -5px;
-        background-color: #212121;
-        padding-left: 10px;
-        border: none;
-      }
-      #searchBtn {
-        width: 100px;
-        height: 44px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-left: -5px;
-      }
-      .fa-solid {
-        width: 20px;
-      }
-      #cart-wishlist > a {
-        margin: 5px;
-        text-decoration: none;
-        color: white;
-      }
-      @media screen and (min-width: 200px) and (max-width: 890px) {
-        /* .fa-magnifying-glass {
-          color: white;
-        } */
-        #searchBtn {
-          border-radius: 10px;
-        }
-        #search {
-          display: none;
-        }
-        #login {
-          display: none;
-        }
-      }
-      #nav-bar {
-        background-color: #141414;
-        /* text-align: left; */
-        color: white;
-      }
-      #nav-bar > ul {
-        display: inline-flex;
-        list-style: none;
-      }
-      #nav-bar > ul li {
-        width: 100px;
-        margin: 8px;
-        padding: 8px;
-        text-align: center;
-      }
-      #nav-bar > ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      #nav-bar > ul li:hover {
-        background-color: rgb(49, 48, 48);
-        border-radius: 3px;
-      }
-      .sub-menu1 {
-        display: none;
-      }
-      #nav-bar > ul li:hover .sub-menu1 ul li {
-        width: 200px;
-        text-align: left;
-        list-style: none;
-      }
-      #nav-bar > ul li:hover .sub-menu1 {
-        display: block;
-        position: absolute;
-        background-color: #26c6da;
-        margin-top: 10px;
-        margin-left: -10px;
-        width: 400px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-      #slide1 > img {
-        height: 300px;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <navbar>
       <div class="head-nav">
         <div id="logo-bar">
-          <img id="logo" src="Loveli Project Images\Loveli logo.png" alt="" />
+          <img
+            id="logo"
+            src="Loveli Project Images\logo\Loveli logo.png"
+            alt=""
+          />
         </div>
 
         <div id="searh-area">
@@ -229,33 +118,333 @@
         </ul>
       </div>
     </navbar>
+
     <div id="slide1"></div>
+    <div id="bestseller">
+      <div id="bestseller-title" class="center-header">
+        <h2>
+          <span id="left">------</span>
+          BESTSELLER
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="product">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        <div id="productCard">
+          <img
+            src="Loveli Project Images\Best Seller Image\bsi-4.webp"
+            alt="img"
+          />
+          <p>Lorem ipsum dolor sit .</p>
+          <h2>₹299</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img
+            src="Loveli Project Images\Best Seller Image\bsi-3.webp"
+            alt="img"
+          />
+          <p>Lorem ipsum dolor amet.</p>
+          <h2>₹799</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img
+            src="Loveli Project Images\Best Seller Image\bsi-2.webp"
+            alt="img"
+          />
+          <p>Lorem ipsum sit amet.</p>
+          <h2>₹699</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img
+            src="Loveli Project Images\Best Seller Image\bsi-1.webp"
+            alt="img"
+          />
+          <p>Lorem dolor sit amet.</p>
+          <h2>₹499</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </div>
+    </div>
+    <div id="hotdeals">
+      <div id="hotdeals-header" class="center-header">
+        <h2>
+          <span id="left">------</span>
+          HOTDEALS
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="poster">
+        <div id="hotdeals-poster">
+          <img src="Loveli Project Images\Hot Deals\hdp-1.webp" alt="" />
+        </div>
+        <div id="hotdeals-poster">
+          <img src="Loveli Project Images\Hot Deals\hdp-2.webp" alt="" />
+        </div>
+        <div id="hotdeals-poster">
+          <img src="Loveli Project Images\Hot Deals\hdp-4.webp" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="justin">
+      <div id="justin-header" class="center-header">
+        <h2>
+          <span id="left">------</span>
+          JUST-IN
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="product">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        <div id="productCard">
+          <img src="Loveli Project Images\JUSTIN\jsi-1.webp" alt="img" />
+          <p>Lorem ipsum dolor sit .</p>
+          <h2>₹299</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\JUSTIN\jsi-2.webp" alt="img" />
+          <p>Lorem ipsum dolor amet.</p>
+          <h2>₹799</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\JUSTIN\jsi-3.webp" alt="img" />
+          <p>Lorem ipsum sit amet.</p>
+          <h2>₹699</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\JUSTIN\jsi-4.webp" alt="img" />
+          <p>Lorem dolor sit amet.</p>
+          <h2>₹499</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </div>
+    </div>
+
+    <div id="tagline">
+      <div id="tagline-header" class="center-header">
+        <h2>
+          <span id="left">------</span>
+          SHUKAR HAI, SUGAR HAI
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="tagline-poster">
+        <img src="Loveli Project Images\Tagline\tli.webp" alt="" />
+      </div>
+    </div>
+
+    <div id="tpow">
+      <div class="center-header">
+        <h2>
+          <span id="left">------</span>
+          TOP PICKS OF THE WEEK
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div>
+        <div id="poster">
+          <div id="hotdeals-poster">
+            <img src="Loveli Project Images\TopPicksOfWeek\tpwi-1.gif" alt="" />
+          </div>
+          <div id="hotdeals-poster">
+            <img src="Loveli Project Images\TopPicksOfWeek\tpi-3.webp" alt="" />
+          </div>
+          <div id="hotdeals-poster">
+            <img src="Loveli Project Images\TopPicksOfWeek\tpi-2.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bnpl">
+      <div class="center-header">
+        <h2>
+          <span id="left">------</span>
+          BUY NOW PAY LATER
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="product">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        <div id="productCard">
+          <img src="Loveli Project Images\BNPL\bnpli-1.webp" alt="img" />
+          <p>Lorem ipsum dolor sit .</p>
+          <h2>₹299</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\BNPL\bnpli-2.webp" alt="img" />
+          <p>Lorem ipsum dolor amet.</p>
+          <h2>₹799</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\BNPL\bnpli-3.webp" alt="img" />
+          <p>Lorem ipsum sit amet.</p>
+          <h2>₹699</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="productCard">
+          <img src="Loveli Project Images\BNPL\bnpli-4.webp" alt="img" />
+          <p>Lorem dolor sit amet.</p>
+          <h2>₹499</h2>
+          <div id="choose">
+            <i class="fa-regular fa-heart"></i>
+            <button id="atc">ADD TO CART</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- REFER YOUR FRIENDS -->
+    <div id="ryf">
+      <div class="center-header">
+        <h2>
+          <span id="left">------</span>
+          BUY NOW PAY LATER
+
+          <span id="right">------</span>
+        </h2>
+      </div>
+      <div id="ryf-poster">
+        <img src="Loveli Project Images\RYF\ryfi.webp" alt="" />
+      </div>
+    </div>
+
+    <hr id="hr" />
+    <footer>
+      <div id="sit">
+        <div class="center-header">
+          <h2>
+            <span id="left">------</span>
+            BUY NOW PAY LATER
+
+            <span id="right">------</span>
+          </h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, non.</p>
+        <div id="sit-input">
+          <input
+            type="email"
+            id="sit-email"
+            name="sitEmail"
+            placeholder="Enter Email"
+          />
+          <button id="sit-btn">SUBSCRIBE</button>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="footer-logo">
+          <img src="Loveli Project Images\logo\Loveli logo.png" alt="" />
+        </div>
+        <div id="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-tumblr"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <hr id="hr" />
+        <div id="footer-nav">
+          <h3>Stores</h3>
+          <h3>Returns</h3>
+          <h3>FAQs</h3>
+          <h3>Terms & Conditions</h3>
+          <h3>About Us</h3>
+        </div>
+        <hr id="hr" />
+        <p id="git">GET IN TOUCH</p>
+        <div id="contact">
+          <div id="info">
+            <h3>Call us at</h3>
+            <h3>1800-209-9933</h3>
+            <p>Monday to Friday : 9 AM to 7 PM</p>
+          </div>
+          <div id="info">
+            <h3>Support</h3>
+            <h3>hello@sugarcosmetics.com</h3>
+          </div>
+          <div id="info">
+            <h3>Careers</h3>
+            <h3>We're hiring!</h3>
+          </div>
+          <div id="info">
+            <h3>Press & Media</h3>
+            <h3>pr@sugarcosmetics.com</h3>
+          </div>
+          <div id="info">
+            <h3>Influencer Collab</h3>
+            <h3>Join Us</h3>
+          </div>
+        </div>
+        <hr id="hr" />
+        <div id="app">
+          <div id="app-text">
+            <p>GET THE NEW SUGAR APP TODAY!</p>
+            <p>Tap into a better shopping experience.</p>
+          </div>
+          <div id="app-image">
+            <img src="https://in.sugarcosmetics.com/playstore.png" alt="" />
+            <img src="https://in.sugarcosmetics.com/apple-store.png" alt="" />
+          </div>
+        </div>
+        <hr id="hr" />
+        <p id="copyright">
+          Copyright © 2022 LOVELI Beauty. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
-  <script>
-    let search = document.getElementById("search");
-    let searchArea = document.getElementById("searh-area");
-    let slide1 = document.getElementById("slide1");
-    let image = [
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F326d1e4e-1c75-4b56-8533-0db3902a5815.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F1e69c5f7-2df9-4c42-bf08-22b6b68779e0.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F34d52684-19de-435e-bbde-86d09bf08c19.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fbcd1e4c1-fbaa-486c-86ed-07048ad3a3f9.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fc1fc9534-054e-46ea-80e2-482a128d9151.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fa7bfdf05-ad0e-4c24-ab48-7ff64e9115b8.jpg&w=1920&q=75",
-      "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff8a41835-0598-46e8-ba2c-72e885291eb0.jpg&w=1920&q=75",
-    ];
-    let count = 0;
-    setInterval(function () {
-      let img = document.createElement("img");
-      img.setAttribute("src", arr[count]);
-      slide1.innerHTML = null;
-      slide1.append(img);
-
-      if (count == image.length - 1) {
-        count = 0;
-      }
-
-      count++;
-    }, 3000);
-  </script>
+  <script src="script.js"></script>
 </html>
