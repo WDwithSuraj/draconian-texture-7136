@@ -165,3 +165,119 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
+
+/* Footer Section */
+#hr {
+  width: 95%;
+  height: 3px;
+  margin: auto;
+  border: 1.5px solid rgb(118, 115, 115);
+  background-color: black;
+}
+#hr:not([size]) {
+  height: 2px;
+}
+#sit {
+  background-image: url("https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg");
+  text-align: center;
+  height: 250px;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+#sit > .center-header {
+  margin-bottom: 0;
+}
+#sit #sit-email {
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-right: -5px;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+#sit #sit-btn {
+  margin-top: 19px;
+  height: 42px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+}
+#footer {
+  text-align: center;
+  /* margin-top: 100px; */
+  background-color: black;
+  color: white;
+}
+#footer > #footer-logo img {
+  margin-top: -50px;
+}
+#footer > #footer-nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#footer > #footer-nav > h3 {
+  padding: 20px;
+  font-weight: 500;
+}
+#footer > #footer-nav > h3:hover {
+  text-decoration: underline;
+}
+#footer > #social {
+  font-size: 1.5rem;
+}
+#footer > #social i {
+  margin: 5px;
+}
+#git {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  color: white;
+}
+#footer > #contact {
+  display: flex;
+  text-align: left;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 15px;
+  font-weight: 600;
+  margin: 5px;
+}
+#footer > #contact > #info h3:nth-child(2) {
+  color: grey;
+  font-weight: 500;
+}
+#footer > #contact > #info h3:nth-child(2):hover {
+  text-decoration: underline;
+}
+#footer > #app {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+}
+#footer > #app > #app-image {
+  display: flex;
+  width: 25%;
+}
+#footer > #app > #app-image img {
+  width: 100%;
+  margin-left: 5px;
+}
+#footer > #app > #app-text p:nth-child(1) {
+  font-size: large;
+  color: white;
+}
+#copyright {
+  padding: 20px;
+  /* margin: 20px; */
+}
