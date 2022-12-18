@@ -51,10 +51,54 @@ function createDom(data) {
     let wish = document.createElement("p");
     wish.setAttribute("class", "fa-regular fa-heart");
     wish.setAttribute("id", "heart");
+    //add to wishlist
+    wish.addEventListener("click", () => {
+      let LSdata = JSON.parse(localStorage.getItem("wishlist"))
+      if (LSdata == null) {
+        LSdata = []
+      }
+      let product = false
+      for (let i = 0; i < LSdata.length; i++) {
+        if (LSdata[i].id == element.id) {
+          product = true;
 
+        }
+      }
+      if (product == true) {
+        alert("Product already in wishlist")
+      } else {
+        LSdata.push(element)
+        localStorage.setItem("wishlist", JSON.stringify(LSdata))
+        alert("Product added to whishlist")
+        wish.style.color = "white"
+        wish.style.backgroundColor = "black"
+      }
+    })
     let atcBtn = document.createElement("button");
     atcBtn.setAttribute("class", "atcBtn");
     atcBtn.innerText = "Add To Cart";
+    // add to cart
+    atcBtn.addEventListener("click", () => {
+      let LSdata = JSON.parse(localStorage.getItem("cart"))
+      if (LSdata == null) {
+        LSdata = []
+      }
+      let product = false
+      for (let i = 0; i < LSdata.length; i++) {
+        if (LSdata[i].id == element.id) {
+          product = true;
+
+        }
+      }
+      if (product == true) {
+        alert("Product already in the cart")
+      } else {
+        LSdata.push(element)
+        localStorage.setItem("cart", JSON.stringify(LSdata))
+        alert("Product added to cart")
+
+      }
+    })
     choose.append(wish, atcBtn);
     box.append(img, name, brand, category, price, choose);
     productCont.append(box);
@@ -95,10 +139,9 @@ function sort(data) {
   });
 }
 
-//add to wishlist
-let wish = document.getElementById("heart");
-wish.addEventListener("click", () => {});
 
-// add to cart
-let atcBtn = document.querySelectorAll(".atcBtn");
-atcBtn.addEventListener("click", (e) => {});
+
+
+
+// let atcBtn = document.querySelectorAll(".atcBtn");
+// atcBtn.addEventListener("click", (e) => {});

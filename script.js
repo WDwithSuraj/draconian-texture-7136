@@ -32,9 +32,27 @@ let userName = document.getElementById("login");
 let LSdata = JSON.parse(localStorage.getItem("login"));
 
 if (LSdata == true) {
-  userName.setAttribute("class", "fa-solid fa-user");
-  userName.innerText = "Suraj";
+  userName.innerText = "";
+  // userName.setAttribute("class");
+  let select = document.createElement("select");
+  select.setAttribute("id", "login-select");
+  let opt1 = document.createElement("option");
+  opt1.setAttribute("value", "user-name");
+  // opt1.setAttribute("class", "fa-solid fa-user");
+  let opt2 = document.createElement("option");
+  opt2.setAttribute("id", "logOut");
+  opt2.innerText = "Log Out";
+  select.addEventListener("change", () => {
+    LSdata = false;
+    if (select.value == opt2.innerText) {
+      if (LSdata == false) {
+        window.location = "index.html";
+      }
+      localStorage.setItem("login", JSON.stringify(LSdata));
+    }
+  });
+  opt1.innerText = "Suraj";
+  select.append(opt1, opt2);
+  userName.append(select);
 }
-window.onbeforeunload = function () {
-  localStorage.removeItem("login");
-};
+

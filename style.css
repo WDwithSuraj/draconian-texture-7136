@@ -397,3 +397,12 @@ p {
   padding: 20px;
   /* margin: 20px; */
 }
+/* LOGIN SECTION */
+
+#login-select {
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  outline: none;
+}
