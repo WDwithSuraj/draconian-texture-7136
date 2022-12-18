@@ -26,3 +26,15 @@ setInterval(function () {
 
 // ----------------------------------
 let bestseller = document.getElementById("bestseller");
+/// login area
+
+let userName = document.getElementById("login");
+let LSdata = JSON.parse(localStorage.getItem("login"));
+
+if (LSdata == true) {
+  userName.setAttribute("class", "fa-solid fa-user");
+  userName.innerText = "Suraj";
+}
+window.onbeforeunload = function () {
+  localStorage.removeItem("login");
+};
